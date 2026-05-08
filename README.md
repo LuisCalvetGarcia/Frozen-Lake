@@ -42,3 +42,8 @@ To test the algorithms locally on your machine, follow these steps:
    ```bash
    git clone [https://github.com/LuisCalvetGarcia/Frozen-Lake.git](https://github.com/LuisCalvetGarcia/Frozen-Lake.git)
    cd Frozen-Lake
+   ```
+   **Execute the main script:**
+    ```bash
+   python main.py
+    ```
