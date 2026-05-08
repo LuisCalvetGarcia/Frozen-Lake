@@ -44,3 +44,7 @@ To test the algorithms locally on your machine, follow these steps:
   pip install gymnasium numpy
 3. **Execute the main script**
   python main.py
+
+## 📄 In-Depth Analysis & Results
+
+For a deep dive into the mathematical foundations, hyperparameters tuning, and a detailed performance comparison between Q-Learning, SARSA, Monte Carlo, and Genetic Algorithms, please refer to the attached project report: IA_P2.pdf.
