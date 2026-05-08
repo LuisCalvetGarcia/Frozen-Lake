@@ -1,15 +1,15 @@
 <h1 align="center">🧊 Frozen Lake: Reinforcement Learning & Evolutionary Algorithms</h1>
 
 <p align="center">
-  <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank"><img src="https://img.shields.io/badge/AI-Machine_Learning-FF6F00?style=for-the-badge" alt="AI Machine Learning"></a>
-  <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"></a>
+  <a href="[https://www.python.org/](https://www.python.org/)" target="_blank"><img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)" alt="Python"></a>
+  <a href="[https://en.wikipedia.org/wiki/Reinforcement_learning](https://en.wikipedia.org/wiki/Reinforcement_learning)" target="_blank"><img src="[https://img.shields.io/badge/AI-Machine_Learning-FF6F00?style=for-the-badge](https://img.shields.io/badge/AI-Machine_Learning-FF6F00?style=for-the-badge)" alt="AI Machine Learning"></a>
+  <a href="[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)" target="_blank"><img src="[https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)" alt="License"></a>
 </p>
 
 <br> 
 
 <p align="center">
-  <img src="https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/frozen_lake.gif" alt="Frozen Lake Gameplay" width="350"/>
+  <img src="[https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/frozen_lake.gif](https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/frozen_lake.gif)" alt="Frozen Lake Gameplay" width="350"/>
 </p>
 
 ## 📌 Overview & The Environment
@@ -44,7 +44,7 @@ The benchmarks below illustrate the performance of each approach when dealing wi
 After conducting 5 independent executions per algorithm (25,000 episodes for RL methods, 80 generations for the Genetic Algorithm), the evolutionary approach proved to be vastly superior in this specific environment:
 
 <p align="center">
-  <img src="screenshots/COMPARATIVA_FINAL_GRAFICA.png" alt="Performance Comparison Graph"/>
+  <img src="./screenshots/COMPARATIVA_FINAL_GRAFICA.png" alt="Performance Comparison Graph"/>
 </p>
 <p align="center"><i><b>Figure 1:</b> Performance comparison. The Genetic Algorithm (red) achieves an ~82% success rate in under 20 generations with near-zero variance, significantly outperforming TD methods (SARSA & Q-Learning, ~49%) and Monte Carlo (~37%).</i></p>
 
@@ -55,11 +55,9 @@ A critical part of this study was analyzing the sensitivity of these algorithms 
 For instance, Q-Learning, despite being a powerful algorithm, proved to be highly unstable when configured with an overly aggressive learning rate ($\alpha = 0.9$) in this stochastic environment:
 
 <p align="center">
-  <img src="screenshots/Qlearning_alpha_0.9_critical.png" alt="Q-Learning Failure Analysis"/>
+  <img src="./screenshots/Qlearning_alpha_0.9_critical.png" alt="Q-Learning Failure Analysis"/>
 </p>
 <p align="center"><i><b>Figure 2:</b> Learning failure analysis under critical hyperparameters (Q-Learning with $\alpha=0.9$). The off-policy nature combined with aggressive learning leads to severe oscillations and a failure to converge stably.</i></p>
-
-> 📄 **In-Depth Analysis:** For a deep dive into the mathematical foundations, hyperparameter tuning, policy extraction analysis, and detailed performance metrics, please refer to the attached project report: `IA_P2.pdf`.
 
 ## 🚀 How to Run
 
