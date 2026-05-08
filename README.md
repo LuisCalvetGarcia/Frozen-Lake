@@ -45,7 +45,6 @@ To test the algorithms locally on your machine, follow these steps:
    ```
    
  2.  **Execute the main script:**
-    
     ```bash
    python main.py
     ```
