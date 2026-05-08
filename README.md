@@ -39,6 +39,4 @@ The project is modularized into different scripts, each implementing a distinct 
 To test the algorithms locally on your machine, follow these steps:
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/LuisCalvetGarcia/Frozen-Lake.git](https://github.com/LuisCalvetGarcia/Frozen-Lake.git)
-   cd Frozen-Lake
+  git clone https://github.com/LuisCalvetGarcia/Frozen-Lake.git
