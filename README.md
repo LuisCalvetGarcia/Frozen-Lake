@@ -40,3 +40,7 @@ To test the algorithms locally on your machine, follow these steps:
 
 1. **Clone the repository:**
   git clone https://github.com/LuisCalvetGarcia/Frozen-Lake.git
+2. **Install dependencies:**
+  pip install gymnasium numpy
+3. **Execute the main script**
+  python main.py
