@@ -12,6 +12,12 @@
   <img src="https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/frozen_lake.gif" alt="Frozen Lake Gameplay" width="350"/>
 </p>
 
+<br> 
+
+<p align="center">
+  <img src="./screenshots/demo.gif" alt="Frozen Lake Gameplay" width="400"/>
+</p>
+
 ## 📌 Overview & The Environment
 
 This repository contains a comprehensive solution for the classic **Frozen Lake** environment. The core goal of this project is to navigate an agent across a grid of slippery ice and water holes to reach a target safely without falling in.
