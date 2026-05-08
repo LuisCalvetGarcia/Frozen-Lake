@@ -12,11 +12,13 @@
   <img src="https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/frozen_lake.gif" alt="Frozen Lake Gameplay" width="350"/>
 </p>
 
-<br> 
 
 <p align="center">
   <img src="./screenshots/demo.gif" alt="Frozen Lake Gameplay" width="400"/>
 </p>
+
+<br> 
+
 
 ## 📌 Overview & The Environment
 
