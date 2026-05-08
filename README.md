@@ -42,12 +42,3 @@ To test the algorithms locally on your machine, follow these steps:
    ```bash
    git clone [https://github.com/LuisCalvetGarcia/Frozen-Lake.git](https://github.com/LuisCalvetGarcia/Frozen-Lake.git)
    cd Frozen-Lake
-   ```
-   
- 2.  **Execute the main script:**
-    ```bash
-   python main.py
-    ```
-
-📄 In-Depth Analysis & Results
-For a deep dive into the mathematical foundations, hyperparameters tuning, and a detailed performance comparison between Q-Learning, SARSA, Monte Carlo, and Genetic Algorithms, please refer to the attached project report: IA_P2.pdf.
