@@ -66,35 +66,35 @@ Here are the final policies learned by each agent on the 4x4 grid:
 
 <table style="width: 100%; text-align: center; border-collapse: collapse;">
   <tr>
-    <td align="center" style="width: 50%; padding: 10px;">
-      <b>SARSA (Conservative)</b><br>
-      <code>S</code> <code>↑</code> <code>↓</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    <td align="center" style="width: 50%; padding: 30px;">
+      <b>SARSA (Conservative)</b><br><br>
+      <code style="font-size: 1.2em;">S</code> <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">↑</code><br><br>
+      <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">G</code>
     </td>
-    <td align="center" style="width: 50%; padding: 10px;">
-      <b>Q-Learning (Greedy)</b><br>
-      <code>S</code> <code>↑</code> <code>↑</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>←</code> <code>↓</code> <code>G</code>
+    <td align="center" style="width: 50%; padding: 30px;">
+      <b>Q-Learning (Greedy)</b><br><br>
+      <code style="font-size: 1.2em;">S</code> <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↑</code><br><br>
+      <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">G</code>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width: 50%; padding: 10px;">
-      <b>Monte Carlo (Unstable)</b><br>
-      <code>S</code> <code>↑</code> <code>←</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>↓</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    <td align="center" style="width: 50%; padding: 30px;">
+      <b>Monte Carlo (Unstable)</b><br><br>
+      <code style="font-size: 1.2em;">S</code> <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">↑</code><br><br>
+      <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">G</code>
     </td>
-    <td align="center" style="width: 50%; padding: 10px;">
-      <b>Genetic Agent (Optimal)</b><br>
-      <code>S</code> <code>↑</code> <code>←</code> <code>↓</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    <td align="center" style="width: 50%; padding: 30px;">
+      <b>Genetic Agent (Optimal)</b><br><br>
+      <code style="font-size: 1.2em;">S</code> <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">↓</code><br><br>
+      <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">↑</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">←</code> <code style="font-size: 1.2em;">H</code><br><br>
+      <code style="font-size: 1.2em;">H</code> <code style="font-size: 1.2em;">→</code> <code style="font-size: 1.2em;">↓</code> <code style="font-size: 1.2em;">G</code>
     </td>
   </tr>
 </table>
