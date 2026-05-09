@@ -64,44 +64,133 @@ Here are the final policies learned by each agent on the 4x4 grid:
 
 <div align="center">
 
-<div align="center">
+<style>
+  .cell {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #1e293b;
+    border-radius: 6px;
+    margin: 2px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+  }
+</style>
 
 <table style="width: 100%; text-align: center; border-collapse: collapse;">
   <tr>
-   <td style="width: 50%; padding: 10px;">
-  <div style="padding-left: 20px;">
-      <b>SARSA (Conservative)</b><br>
-      <code>S</code> <code>↑</code> <code>↓</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+
+    <td style="width: 50%; padding: 10px;">
+      <div style="padding-left: 20px;">
+        <b>SARSA (Conservative)</b><br>
+
+        <span class="cell">S</span>
+        <span class="cell">↑</span>
+        <span class="cell">↓</span>
+        <span class="cell">↑</span><br>
+
+        <span class="cell">←</span>
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">↑</span>
+        <span class="cell">↓</span>
+        <span class="cell">←</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">↓</span>
+        <span class="cell">G</span>
+      </div>
     </td>
-   <td style="width: 50%; padding: 10px;">
-  <div style="padding-left: 20px;">
-      <b>Q-Learning (Greedy)</b><br>
-      <code>S</code> <code>↑</code> <code>↑</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>←</code> <code>↓</code> <code>G</code>
+
+    <td style="width: 50%; padding: 10px;">
+      <div style="padding-left: 20px;">
+        <b>Q-Learning (Greedy)</b><br>
+
+        <span class="cell">S</span>
+        <span class="cell">↑</span>
+        <span class="cell">↑</span>
+        <span class="cell">↑</span><br>
+
+        <span class="cell">←</span>
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">↑</span>
+        <span class="cell">↓</span>
+        <span class="cell">←</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">H</span>
+        <span class="cell">←</span>
+        <span class="cell">↓</span>
+        <span class="cell">G</span>
+      </div>
     </td>
+
   </tr>
+
   <tr>
+
     <td style="width: 50%; padding: 10px;">
-  <div style="padding-left: 20px;">
-      <b>Monte Carlo (Unstable)</b><br>
-      <code>S</code> <code>↑</code> <code>←</code> <code>↑</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>↓</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+      <div style="padding-left: 20px;">
+        <b>Monte Carlo (Unstable)</b><br>
+
+        <span class="cell">S</span>
+        <span class="cell">↑</span>
+        <span class="cell">←</span>
+        <span class="cell">↑</span><br>
+
+        <span class="cell">←</span>
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">↑</span>
+        <span class="cell">↓</span>
+        <span class="cell">↓</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">↓</span>
+        <span class="cell">G</span>
+      </div>
     </td>
+
     <td style="width: 50%; padding: 10px;">
-  <div style="padding-left: 20px;">
-      <b>Genetic Agent (Optimal)</b><br>
-      <code>S</code> <code>↑</code> <code>←</code> <code>↓</code><br>
-      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
-      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
-      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+      <div style="padding-left: 20px;">
+        <b>Genetic Agent (Optimal)</b><br>
+
+        <span class="cell">S</span>
+        <span class="cell">↑</span>
+        <span class="cell">←</span>
+        <span class="cell">↓</span><br>
+
+        <span class="cell">←</span>
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">↑</span>
+        <span class="cell">↓</span>
+        <span class="cell">←</span>
+        <span class="cell">H</span><br>
+
+        <span class="cell">H</span>
+        <span class="cell">→</span>
+        <span class="cell">↓</span>
+        <span class="cell">G</span>
+      </div>
     </td>
+
   </tr>
 </table>
 
