@@ -119,4 +119,4 @@ To test the algorithms locally on your machine, follow these steps:
 
 ## 📄 In-Depth Analysis & Results
 
-For a deep dive into the mathematical foundations, hyperparameters tuning, and a detailed performance comparison between Q-Learning, SARSA, Monte Carlo, and Genetic Algorithms, please refer to the attached project report: Frozen_Lake.pdf.
+For a deep dive into the mathematical foundations, hyperparameters tuning, and a detailed performance comparison between Q-Learning, SARSA, Monte Carlo, and Genetic Algorithms, please refer to the attached project report: **[`📄 Frozen_Lake.pdf`](./Frozen_Lake.pdf)**.
