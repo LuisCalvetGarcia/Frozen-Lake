@@ -24,28 +24,28 @@
 
 This repository contains a comprehensive solution for the classic **Frozen Lake** environment. The core goal of this project is to navigate an agent across a grid of slippery ice and water holes to reach a target safely without falling in.
 
-[cite_start]In the standard configuration (`is_slippery=True`), the environment is highly stochastic: the agent only moves in the intended direction with a 33.3% probability, while the remaining 66.6% is distributed among perpendicular directions[cite: 26]. [cite_start]Due to these complex and non-deterministic transition dynamics, the project explores and compares different Artificial Intelligence approaches, specifically focusing on **Model-Free Reinforcement Learning** techniques and **Evolutionary Computing**[cite: 4, 35].
+In the standard configuration (`is_slippery=True`), the environment is highly stochastic: the agent only moves in the intended direction with a 33.3% probability, while the remaining 66.6% is distributed among perpendicular directions. Due to these complex and non-deterministic transition dynamics, the project explores and compares different Artificial Intelligence approaches, specifically focusing on **Model-Free Reinforcement Learning** techniques and **Evolutionary Computing**.
 
 The environment is represented by a grid consisting of four types of tiles:
-* [cite_start]**`S` (Start):** The safe starting point of our agent[cite: 23].
+* **`S` (Start):** The safe starting point of our agent.
 * **`F` (Frozen):** Solid ice tiles, safe to walk on.
-* **`H` (Hole):** Holes in the ice. [cite_start]Stepping here terminates the episode with a reward of 0[cite: 24].
-* **`G` (Goal):** The objective. [cite_start]Reaching this tile terminates the episode with a successful reward of +1[cite: 23, 24].
+* **`H` (Hole):** Holes in the ice. Stepping here terminates the episode with a reward of 0.
+* **`G` (Goal):** The objective. Reaching this tile terminates the episode with a successful reward of +1.
 
 ## 🧠 Algorithms Implemented
 
-[cite_start]The project is modularized into different scripts, each implementing a distinct algorithmic approach[cite: 6, 33]:
+The project is modularized into different scripts, each implementing a distinct algorithmic approach:
 
 | Algorithm | Type | Technical Summary |
 | :--- | :--- | :--- |
 | **`q_Learning.py`** | Off-Policy TD | Learns the optimal action-value function independently of the agent's current policy by assuming greedy future actions. |
 | **`sarsa.py`** | On-Policy TD | Updates state-action values based on the specific action taken by the current $\epsilon$-greedy policy, leading to safer, more conservative convergence in risky environments. |
 | **`montecarlo.py`** | First-Visit | Estimates the value of state-action pairs by averaging the returns obtained following the first visit to a state at the end of each full episode. |
-| **`genetic.py`** | Evolutionary | [cite_start]Evolves a population of discrete deterministic policies through successive generations using tournament selection, uniform crossover, and mutation operators to maximize fitness[cite: 35]. |
+| **`genetic.py`** | Evolutionary | Evolves a population of discrete deterministic policies through successive generations using tournament selection, uniform crossover, and mutation operators to maximize fitness. |
 
 ## 📊 Experimental Results
 
-[cite_start]The benchmarks below illustrate the performance of each approach when dealing with the sparse reward structure and the stochastic nature of the slippery 4x4 grid[cite: 44].
+The benchmarks below illustrate the performance of each approach when dealing with the sparse reward structure and the stochastic nature of the slippery 4x4 grid.
 
 ### Global Performance Comparison
 
