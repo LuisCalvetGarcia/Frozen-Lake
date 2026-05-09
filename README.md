@@ -93,7 +93,7 @@ Here are the final policies learned by each agent on the 4x4 grid:
       <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
     </td>
     <td style="width: 50%; padding: 10px;">
-      <div style="padding-left: 20px;">
+      <div style="padding-left: 100px;">
       <b>Genetic Agent (Optimal)</b><br>
       <code>S</code> <code>↑</code> <code>←</code> <code>↓</code><br>
       <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
