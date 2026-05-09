@@ -64,13 +64,42 @@ Here are the final policies learned by each agent on the 4x4 grid:
 
 <div align="center">
 
-| SARSA (Conservative) | Q-Learning (Greedy) |
-| :---: | :---: |
-| `S` `↑` `↓` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `→` `↓` `G` | `S` `↑` `↑` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `←` `↓` `G` |
+<div align="center">
 
-| Monte Carlo (Unstable) | Genetic Agent (Optimal) |
-| :---: | :---: |
-| `S` `↑` `←` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `↓` `H`<br>`H` `→` `↓` `G` | `S` `↑` `←` `↓`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `→` `↓` `G` |
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 10px;">
+      <b>SARSA (Conservative)</b><br>
+      <code>S</code> <code>↑</code> <code>↓</code> <code>↑</code><br>
+      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
+      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
+      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    </td>
+    <td style="width: 50%; padding: 10px;">
+      <b>Q-Learning (Greedy)</b><br>
+      <code>S</code> <code>↑</code> <code>↑</code> <code>↑</code><br>
+      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
+      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
+      <code>H</code> <code>←</code> <code>↓</code> <code>G</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; padding: 10px;">
+      <b>Monte Carlo (Unstable)</b><br>
+      <code>S</code> <code>↑</code> <code>←</code> <code>↑</code><br>
+      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
+      <code>↑</code> <code>↓</code> <code>↓</code> <code>H</code><br>
+      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    </td>
+    <td style="width: 50%; padding: 10px;">
+      <b>Genetic Agent (Optimal)</b><br>
+      <code>S</code> <code>↑</code> <code>←</code> <code>↓</code><br>
+      <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
+      <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
+      <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
+    </td>
+  </tr>
+</table>
 
 </div>
 
