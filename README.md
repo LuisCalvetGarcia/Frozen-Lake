@@ -56,16 +56,28 @@ After conducting 5 independent executions per algorithm (25,000 episodes for RL 
 </p>
 <p align="center"><i><b>Figure 1:</b> Performance comparison. The Genetic Algorithm (red) achieves an ~82% success rate in under 20 generations with near-zero variance, significantly outperforming TD methods (SARSA & Q-Learning, ~49%) and Monte Carlo (~37%).</i></p>
 
-## ⚙️ Hyperparameter Analysis & Failure Modes
+## 🗺️ Learned Policies Comparison
 
-[cite_start]A critical part of this study was analyzing the sensitivity of these algorithms to their hyperparameters (Learning Rate $\alpha$, Discount Factor $\gamma$, and Exploration Rate $\epsilon$)[cite: 35]. 
+Because the ice is slippery (`is_slippery=True`), moving in a direction has a 33.3% chance of sliding perpendicularly. This forces the algorithms to learn different survival strategies instead of just the shortest path. 
 
-For instance, Q-Learning, despite being a powerful algorithm, proved to be highly unstable when configured with an overly aggressive learning rate ($\alpha = 0.9$) in this stochastic environment:
+Here are the final policies learned by each agent on the 4x4 grid:
 
-<p align="center">
-  <img src="./screenshots/Q-Learning%20Failure%20Analysis.png" alt="Q-Learning Failure Analysis"/>
-</p>
-<p align="center"><i><b>Figure 2:</b> Learning failure analysis under critical hyperparameters (Q-Learning with $\alpha=0.9$). The off-policy nature combined with aggressive learning leads to severe oscillations and a failure to converge stably.</i></p>
+<div align="center">
+
+| SARSA (Conservative) | Q-Learning (Greedy) |
+| :---: | :---: |
+| `S` `↑` `↓` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `→` `↓` `G` | `S` `↑` `↑` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `←` `↓` `G` |
+
+| Monte Carlo (Unstable) | Genetic Agent (Optimal) |
+| :---: | :---: |
+| `S` `↑` `←` `↑`<br>`←` `H` `→` `H`<br>`↑` `↓` `↓` `H`<br>`H` `→` `↓` `G` | `S` `↑` `←` `↓`<br>`←` `H` `→` `H`<br>`↑` `↓` `←` `H`<br>`H` `→` `↓` `G` |
+
+</div>
+
+### Key Strategy Insights:
+* **The Wall Strategy (Q-Learning):** Notice the top row (`↑ ↑ ↑`). The agent smartly learns to "crash" intentionally into the top wall. This prevents it from accidentally sliding down into the holes, allowing safe horizontal movement.
+* **The Danger Zone (SARSA & Genetic):** At position (2,2), both algorithms choose to move Left (`←`) instead of towards the goal. This counter-intuitive, conservative move safely avoids slipping into the adjacent hole.
+* **The Optimal Path (Genetic Algorithm):** The evolutionary approach quickly finds a highly efficient route, achieving over an 82% success rate, by safely navigating the top-right corner (`↓`) avoiding the infinite loops sometimes caused by conservative TD policies.
 
 ## 🚀 How to Run
 
