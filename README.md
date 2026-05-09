@@ -66,16 +66,14 @@ Here are the final policies learned by each agent on the 4x4 grid:
 
 <table style="width: 100%; text-align: center; border-collapse: collapse;">
   <tr>
-    <td style="width: 50%; padding: 10px;">
-      <div style="padding-left: 20px;">
+    <td style="width: 50%; padding: 10px; text-indent: 20px;">
       <b>SARSA (Conservative)</b><br>
       <code>S</code> <code>↑</code> <code>↓</code> <code>↑</code><br>
       <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
       <code>↑</code> <code>↓</code> <code>←</code> <code>H</code><br>
       <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
     </td>
-    <td style="width: 50%; padding: 10px;">
-      <div style="padding-left: 20px;">
+    <td style="width: 50%; padding: 10px; text-indent: 20px;">
       <b>Q-Learning (Greedy)</b><br>
       <code>S</code> <code>↑</code> <code>↑</code> <code>↑</code><br>
       <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
@@ -84,16 +82,14 @@ Here are the final policies learned by each agent on the 4x4 grid:
     </td>
   </tr>
   <tr>
-    <td style="width: 50%; padding: 10px;">
-      <div style="padding-left: 20px;">
+    <td style="width: 50%; padding: 10px; text-indent: 20px;">
       <b>Monte Carlo (Unstable)</b><br>
       <code>S</code> <code>↑</code> <code>←</code> <code>↑</code><br>
       <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
       <code>↑</code> <code>↓</code> <code>↓</code> <code>H</code><br>
       <code>H</code> <code>→</code> <code>↓</code> <code>G</code>
     </td>
-    <td style="width: 50%; padding: 10px;">
-      <div style="padding-left: 100px;">
+    <td style="width: 50%; padding: 10px; text-indent: 20px;">
       <b>Genetic Agent (Optimal)</b><br>
       <code>S</code> <code>↑</code> <code>←</code> <code>↓</code><br>
       <code>←</code> <code>H</code> <code>→</code> <code>H</code><br>
